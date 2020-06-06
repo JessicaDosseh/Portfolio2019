@@ -1,3 +1,6 @@
+<h1 align="canter"><img src="assets/logo-icon.png" /></h1>
+<br>
+
 <div align="center">
    
 
