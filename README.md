@@ -1,5 +1,9 @@
-<h1 align="canter"><img src="assets/logo-icon.png" width = "400"/></h1>
+<div align="center">
+   
+<h1 align="canter"><img src="assets/logo-icon.png" width = "300"/></h1>
 <br>
+
+</div>
 
 <div align="center">
    
