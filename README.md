@@ -1,4 +1,4 @@
-<h1 align="canter"><img src="assets/logo-icon.png" /></h1>
+<h1 align="canter"><img src="assets/logo-icon.png" width='20px' height='20px'/></h1>
 <br>
 
 <div align="center">
