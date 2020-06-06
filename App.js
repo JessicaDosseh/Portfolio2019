@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import NavCondition from './src/components/Navigation/NavCondition';
-
+import LandingPage from './src/components/LandingPage/LandingPage';
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <Text>Open up App.js to start working on your app!</Text> */}
       <NavCondition />
+      <LandingPage />
     </View>
   );
 }

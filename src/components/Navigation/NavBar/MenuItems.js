@@ -39,9 +39,9 @@ const useStyles = makeStyles(() => ({
     flexFlow: 'row wrap',
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'sticky',
-    top: 0,
-    left: 0,
+    // position: 'static',
+    // // top: 0,
+    // // left: 0,
     '& dark': {
       background: '#141414',
       color: '#FFFFFF',
