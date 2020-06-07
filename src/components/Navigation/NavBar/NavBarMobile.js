@@ -1,16 +1,27 @@
 import React from 'react';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
 import Skeleton from '@material-ui/lab/Skeleton';
 import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
+import MenuIcon from '@material-ui/icons/Menu';
 import FiberManualRecordTwoToneIcon from '@material-ui/icons/FiberManualRecordTwoTone';
 import { blue } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 
-const NavBarWeb = (props) => {
+const NavBarMobile = (props) => {
   const classes = useStyles();
   const { loading = false } = props;
+
+  let viewPort = false;
+  const viewPortWidth = false;
+  const md = useMediaQuery('(min-width: 900px)');
+  if (viewPortWidth === md) {
+    viewPort = true;
+  } else {
+    viewPort = false;
+  }
 
   return (
     <Box className={classes.core}>
@@ -19,6 +30,18 @@ const NavBarWeb = (props) => {
           <Box className={classes.leftContainer}>
             <CardHeader
               action={
+                loading ? (
+                  <Skeleton className={classes.text} width={40} height={40} />
+                ) : (
+                  <MenuIcon style={{ fontSize: 30, paddingTop: 10 }} />
+                )
+              }
+            />
+          </Box>
+
+          <Box className={classes.centerContainer}>
+            <CardHeader
+              title={
                 loading ? (
                   <Skeleton className={classes.text} width={40} height={40} />
                 ) : (
@@ -34,67 +57,47 @@ const NavBarWeb = (props) => {
             />
           </Box>
 
-          <Box className={classes.centerContainer}>
-            <CardHeader
-              title={
-                loading ? (
-                  <Skeleton className={classes.text} width={40} height={40} />
-                ) : (
-                  <Box className={classes.menu}>
-                    <Link to='/' className={(classes.root, classes.link)}>
-                      <color className={classes.root}>
-                        <Typography
-                          variant='subtitle2'
-                          style={{ fontWeight: 600 }}
-                        >
-                          Featured Work
-                        </Typography>
-                      </color>
-                    </Link>
-                    <Link to='/' className={(classes.root, classes.link)}>
-                      <color className={classes.root}>
-                        <Typography
-                          variant='subtitle2'
-                          style={{ fontWeight: 600 }}
-                        >
-                          My Skills
-                        </Typography>
-                      </color>
-                    </Link>
-                    <Link to='/' className={(classes.root, classes.link)}>
-                      <color className={classes.root}>
-                        <Typography
-                          variant='subtitle2'
-                          style={{ fontWeight: 600 }}
-                        >
-                          About Me
-                        </Typography>
-                      </color>
-                    </Link>
-                  </Box>
-                )
-              }
-            />
-          </Box>
-
           <Box className={classes.rightContainer}>
             <CardHeader
               avatar={
                 loading ? (
                   <Skeleton variant='circle' width={40} height={40} />
                 ) : (
-                  <Box className={classes.icons}>
-                    <Link to='/' className={(classes.root, classes.link)}>
-                      <color className={classes.root}>
-                        <Typography variant='h6' style={{ fontWeight: 600 }}>
-                          Contact
-                        </Typography>
-                      </color>
-                    </Link>
-                    <FiberManualRecordTwoToneIcon
-                      className={classes.mode}
-                      style={{ fontSize: 40, padding: '0 20 0 40' }}
-                    />
+                  <Box>
+                    {(() => {
+                      switch (viewPort) {
+                        case true:
+                          return (
+                            <FiberManualRecordTwoToneIcon
+                              className={classes.mode}
+                              style={{ fontSize: 40, padding: '0 20 0 40' }}
+                            />
+                          );
+                        default:
+                          // case false
+                          return (
+                            <Box className={classes.icons}>
+                              <Link
+                                to='/'
+                                className={(classes.root, classes.link)}
+                              >
+                                <color className={classes.root}>
+                                  <Typography
+                                    variant='h6'
+                                    style={{ fontWeight: 600 }}
+                                  >
+                                    Contact
+                                  </Typography>
+                                </color>
+                              </Link>
+                              <FiberManualRecordTwoToneIcon
+                                className={classes.mode}
+                                style={{ fontSize: 40, padding: '0 20 0 40' }}
+                              />
+                            </Box>
+                          );
+                      }
+                    })()}
                   </Box>
                 )
               }
@@ -133,8 +136,6 @@ const useStyles = makeStyles(() => ({
   },
   link: {
     textDecoration: 'none',
-    marginLeft: 20,
-    marginRight: 20,
   },
   leftContainer: {
     width: '30%',
@@ -173,4 +174,4 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default NavBarWeb;
+export default NavBarMobile;

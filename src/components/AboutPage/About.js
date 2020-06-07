@@ -8,8 +8,11 @@ import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
+import { blue } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
-import me from '../../images/me.jpeg';
+// import me from '../../images/me.jpeg';
+import me from '../../images/me2.jpg';
 
 const About = (props) => {
   const classes = useStyles();
@@ -51,7 +54,7 @@ const About = (props) => {
                                 variant='caption'
                                 style={{ fontWeight: 600 }}
                               >
-                                About
+                                — About
                               </Typography>
                               <br />
                               <br />
@@ -99,6 +102,7 @@ const About = (props) => {
                         alt='Me'
                         style={{
                           width: '200px',
+                          height: '200px',
                           borderRadius: '50%',
                           paddingTop: 20,
                         }}
@@ -132,13 +136,16 @@ const About = (props) => {
                       <br />
                       <Box className={classes.space}>
                         <IconButton href='https://github.com/JessicaDosseh'>
-                          <GitHubIcon />
+                          <GitHubIcon style={{ color: blue.A700 }} />
                         </IconButton>
                         <IconButton href='https://twitter.com/JessicaDosseh'>
-                          <TwitterIcon />
+                          <TwitterIcon style={{ color: blue.A700 }} />
                         </IconButton>
                         <IconButton href='https://www.linkedin.com/in/jessicadosseh/'>
-                          <LinkedInIcon />
+                          <LinkedInIcon style={{ color: blue.A700 }} />
+                        </IconButton>
+                        <IconButton href='#'>
+                          <EmailIcon style={{ color: blue.A700 }} />
                         </IconButton>
                       </Box>
                     </Box>

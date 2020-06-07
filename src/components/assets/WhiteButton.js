@@ -22,7 +22,7 @@ const useStyles = makeStyles(() => ({
     textDecoration: 'none',
     background: '#FFFFFF',
     color: '#525252',
-    boxShadow: '1px 4px 10px #DFDFDF',
+    // boxShadow: '1px 4px 10px #DFDFDF',
     margin: 10,
   },
 }));

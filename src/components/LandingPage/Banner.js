@@ -5,9 +5,12 @@ import Skeleton from '@material-ui/lab/Skeleton';
 import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import SmsIcon from '@material-ui/icons/Sms';
+import FaceIcon from '@material-ui/icons/Face';
+import { blue, blueGrey } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import banner from '../../images/banner-img.png';
-import banner2 from '../../images/banner-img2.png';
+import blinkBot from '../../images/blinkBot.gif';
 import LambdaLogo from '../../images/LambdaSchool-logo.png';
 import BaxterMillLogo from '../../images/BaxterMill-logo.png';
 
@@ -34,7 +37,9 @@ const Banner = (props) => {
                 return (
                   <Box className={classes.container} className={classes.img2}>
                     <br />
-                    <img src={banner} alt='banner' className={classes.img2} />
+                    {/* <img src={banner} alt='banner' className={classes.img2} /> */}
+                    {/* <FaceIcon style={{ fontSize: 200, color: blue.A700 }} /> */}
+                    <img src={blinkBot} alt='banner' className={classes.img2} />
                   </Box>
                 );
               default:
@@ -74,9 +79,15 @@ const Banner = (props) => {
                     />
                   ) : (
                     <Typography variant='h4' style={{ fontWeight: 600 }}>
-                      I’m Jessica Dosseh, a Full Stack Software Engineer, an Art
-                      Enthusiast &#38; currently a student at Lambda School!{' '}
-                      <Link>Let’s talk.</Link>
+                      I’m Jessica Dosseh, a Full Stack{' '}
+                      <blue style={{ color: blue.A700 }}>
+                        Software Engineer
+                      </blue>{' '}
+                      , an Art Enthusiast &#38; currently a student at Lambda
+                      School!{' '}
+                      <Link style={{ color: blue.A700 }}>
+                        Let’s talk. <SmsIcon style={{ color: blueGrey[300] }} />
+                      </Link>
                     </Typography>
                   )
                 }
@@ -145,9 +156,10 @@ const useStyles = makeStyles(() => ({
       color: '#FFFFFF',
     },
     '& light': {
-      background: '#FFFFFF',
+      background: '#F7F7F7',
       color: '#141414',
     },
+    // marginTop: 40,
   },
   mainContainer: {
     width: '100%',
@@ -201,6 +213,7 @@ const useStyles = makeStyles(() => ({
     width: '100%',
     maxWidth: '300px',
     height: 'auto',
+    textAlign: 'center',
   },
   logo: {
     width: '100%',

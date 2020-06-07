@@ -5,6 +5,8 @@ import Skeleton from '@material-ui/lab/Skeleton';
 import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import FaceIcon from '@material-ui/icons/Face';
+import { blue } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 
 const Info = (props) => {
@@ -47,10 +49,10 @@ const Info = (props) => {
                               variant='h5'
                               style={{ fontWeight: 600 }}
                             >
-                              Lorem ipsum dolor sit amet, pri fugit facer
-                              suavitate in, modo doming eruditi cu sea. Ad eum
-                              quis nominati, sea eu movet epicurei
-                              concludaturque,
+                              — Dear reader
+                              <br />
+                              It may be hard, but it’s not impossible. So, what
+                              are you waiting for?
                             </Typography>
                           )
                         }
@@ -64,8 +66,10 @@ const Info = (props) => {
                               <Link href='https://medium.com/@jessica.dosseh/lambda-school-and-the-art-of-shifting-to-tech-588a18f24c4'>
                                 <Typography
                                   variant='h6'
-                                  style={{ fontWeight: 600 }}
+                                  style={{ fontWeight: 600, color: blue.A700 }}
                                 >
+                                  <FaceIcon style={{ color: blue.A700 }} />
+                                  <br />
                                   Read My Shift To Tech Article
                                 </Typography>
                               </Link>
@@ -99,17 +103,18 @@ const Info = (props) => {
                   ) : (
                     <light>
                       <Typography variant='subheader2'>
-                        Lorem ipsum dolor sit amet, pri fugit facer suavitate
-                        in, modo doming eruditi cu sea. Ad eum quis nominati,
-                        sea eu movet epicurei concludaturque, nisl feugiat ut
-                        vel. Vim in exerci doming theophrastus, in eos oblique
-                        scaevola inciderint. Alii salutandi pri id. An usu diam
-                        tempor, cu cum quas splendide. Quem expetendis
-                        sententiae eu vix, no per epicuri percipit oportere. Pro
-                        an consulatu necessitatibus, alia qualisque ex eos. An
-                        usu diam tempor, cu cum quas splendide. Quem expetendis
-                        sententiae eu vix, no per epicuri percipit oportere. Pro
-                        an consulatu necessitatibus, alia qualisque ex eos.
+                        Growing up, I’ve always wanted to be an artist, but it
+                        took me a long time to realize that what I really wanted
+                        was the right to creative freedom. When you say you want
+                        to be an artist, people look at you funny and most
+                        likely think, “there’s no financial stability in art.”
+                        Which I mean, they’re not completely wrong; however, I
+                        personally believe that creativity is limitless. It
+                        wasn’t until I entered the world of tech that I realized
+                        that it was completely possible to not be a starving
+                        artist. I’m passionate about the bridge between
+                        traditional art and technology and the innovations in
+                        between.
                       </Typography>
                       <br />
                       <br />
@@ -169,7 +174,7 @@ const Info = (props) => {
   );
 };
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     display: 'flex',
@@ -211,6 +216,11 @@ const useStyles = makeStyles(() => ({
     width: '100%',
     maxWidth: '300px',
     height: 'auto',
+  },
+  space: {
+    '& > *': {
+      margin: theme.spacing(1),
+    },
   },
 }));
 
