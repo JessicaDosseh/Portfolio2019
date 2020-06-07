@@ -111,8 +111,8 @@ const NavBarMobile = (props) => {
 
 const useStyles = makeStyles(() => ({
   core: {
-    // position: 'fixed',
-    position: 'sticky',
+    position: 'fixed',
+    // position: 'sticky',
     top: 0,
     width: '100%',
   },

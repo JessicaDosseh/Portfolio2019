@@ -9,10 +9,26 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
-import { blue } from '@material-ui/core/colors';
+import Tooltip from '@material-ui/core/Tooltip';
+import { blue, grey } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 // import me from '../../images/me.jpeg';
 import me from '../../images/me2.jpg';
+
+const useStylesBootstrap = makeStyles((theme) => ({
+  arrow: {
+    color: grey[900],
+  },
+  tooltip: {
+    backgroundColor: grey[900],
+  },
+}));
+
+function BootstrapTooltip(props) {
+  const classes = useStylesBootstrap();
+
+  return <Tooltip arrow classes={classes} {...props} />;
+}
 
 const About = (props) => {
   const classes = useStyles();
@@ -135,18 +151,27 @@ const About = (props) => {
                       <br />
                       <br />
                       <Box className={classes.space}>
-                        <IconButton href='https://github.com/JessicaDosseh'>
-                          <GitHubIcon style={{ color: blue.A700 }} />
-                        </IconButton>
-                        <IconButton href='https://twitter.com/JessicaDosseh'>
-                          <TwitterIcon style={{ color: blue.A700 }} />
-                        </IconButton>
-                        <IconButton href='https://www.linkedin.com/in/jessicadosseh/'>
-                          <LinkedInIcon style={{ color: blue.A700 }} />
-                        </IconButton>
-                        <IconButton href='#'>
-                          <EmailIcon style={{ color: blue.A700 }} />
-                        </IconButton>
+                        <BootstrapTooltip title='Github' arrow>
+                          <IconButton href='https://github.com/JessicaDosseh'>
+                            <GitHubIcon style={{ color: blue.A700 }} />
+                          </IconButton>
+                        </BootstrapTooltip>
+                        <BootstrapTooltip title='Twitter' arrow>
+                          <IconButton href='https://twitter.com/JessicaDosseh'>
+                            <TwitterIcon style={{ color: blue.A700 }} />
+                          </IconButton>
+                        </BootstrapTooltip>
+
+                        <BootstrapTooltip title='LinkedIn' arrow>
+                          <IconButton href='https://www.linkedin.com/in/jessicadosseh/'>
+                            <LinkedInIcon style={{ color: blue.A700 }} />
+                          </IconButton>
+                        </BootstrapTooltip>
+                        <BootstrapTooltip title='Contact Me' arrow>
+                          <IconButton href='#Contact_Form'>
+                            <EmailIcon style={{ color: blue.A700 }} />
+                          </IconButton>
+                        </BootstrapTooltip>
                       </Box>
                     </Box>
                   )

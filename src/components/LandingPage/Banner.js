@@ -159,7 +159,7 @@ const useStyles = makeStyles(() => ({
       background: '#F7F7F7',
       color: '#141414',
     },
-    // marginTop: 40,
+    marginTop: 39,
   },
   mainContainer: {
     width: '100%',
@@ -189,7 +189,7 @@ const useStyles = makeStyles(() => ({
     flexFlow: 'row wrap',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
-    marginTop: 100,
+    marginTop: 70,
   },
   grid_2_Item: {
     width: '40%',
