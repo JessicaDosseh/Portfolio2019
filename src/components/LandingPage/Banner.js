@@ -17,7 +17,7 @@ const Banner = (props) => {
 
   let viewPort = false;
   const viewPortWidth = false;
-  const md = useMediaQuery('(min-width: 1450px)');
+  const md = useMediaQuery('(min-width: 1650px)');
   if (viewPortWidth === md) {
     viewPort = true;
   } else {
@@ -33,7 +33,6 @@ const Banner = (props) => {
               case true:
                 return (
                   <Box className={classes.container} className={classes.img2}>
-                    {/* <Typography variant='h6'>Hello</Typography> */}
                     <br />
                     <img src={banner} alt='banner' className={classes.img2} />
                   </Box>

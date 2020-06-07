@@ -5,7 +5,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import { makeStyles } from '@material-ui/core/styles';
 import WhiteButton from '../../assets/WhiteButton';
 
-const NavBarWeb = (props) => {
+const MenuItems = (props) => {
   const classes = useStyles();
   const { loading = false } = props;
 
@@ -39,9 +39,6 @@ const useStyles = makeStyles(() => ({
     flexFlow: 'row wrap',
     justifyContent: 'center',
     alignItems: 'center',
-    // position: 'static',
-    // // top: 0,
-    // // left: 0,
     '& dark': {
       background: '#141414',
       color: '#FFFFFF',
@@ -68,4 +65,4 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default NavBarWeb;
+export default MenuItems;
