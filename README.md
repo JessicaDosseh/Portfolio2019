@@ -18,7 +18,7 @@
 
 </div>
 
-# My Personal Portfolio Website ----- [![Netlify Status](https://api.netlify.com/api/v1/badges/18ad1b9a-1e4c-4097-8870-ba301dc33884/deploy-status)](https://app.netlify.com/sites/jessicadosseh/deploys)
+# My Personal Portfolio Website ----- [![Netlify Status](https://api.netlify.com/api/v1/badges/18ad1b9a-1e4c-4097-8870-ba301dc33884/deploy-status)](https://jessicadosseh.netlify.app/)
 
 A personal portfolio allows each individual to put a personal touch and emphasis on their journey, personality, and to highlight the pieces of work that are important to them and reflects who they are.
 
