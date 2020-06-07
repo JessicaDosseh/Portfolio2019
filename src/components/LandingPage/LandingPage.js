@@ -12,7 +12,7 @@ const LandingPage = () => {
       <Banner />
       <AboutPage />
       {/* <InspirationsBanner /> */}
-      <Contact />
+      {/* <Contact /> */}
       <FooterCondition />
     </Box>
   );
