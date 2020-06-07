@@ -18,9 +18,30 @@
 
 </div>
 
-# Personal Portfolio Website 
+# My Personal Portfolio Website 
 
 A personal portfolio allows each individual to put a personal touch and emphasis on their journey, personality, and to highlight the pieces of work that are important to them and reflects who they are.
 
 In accordance with this, my portfolio is a way to express my passion for art and technology.  It's because of my love for clean design and minimalistic perspectives that I put together a portfolio that encompasses the use of cutting-edge technology and minimalistic design. 
 <br>
+
+---
+
+# Getting Started
+
+## Project Set Up
+
+> To set up your expo workspace 
+- [ ] Create a forked copy of this project.
+- [ ] Clone your OWN version of the repository in your terminal. 
+- [ ] `git pull` to make sure you are uptodate  
+- [ ] `git checkout -b new-branch-name`
+- [ ] Run `yarn` to install node_module.
+- [ ] Run `expo install`
+- [ ] Run `expo start` to start expo file. 
+
+:rocket:  DO your magic! 
+
+> Git flow cheat sheet
+
+   - [ ] Push your work to your branch: `git add .` | `git commit -m '...'` | `git push origin your-branch-name`
