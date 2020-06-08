@@ -12,7 +12,6 @@ import EmailIcon from '@material-ui/icons/Email';
 import Tooltip from '@material-ui/core/Tooltip';
 import { blue, grey } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
-// import me from '../../images/me.jpeg';
 import me from '../../images/me2.jpg';
 
 const useStylesBootstrap = makeStyles((theme) => ({
@@ -191,7 +190,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'center',
-    // height: '72rem',
     '& dark': {
       background: '#141414',
       color: '#FFFFFF',
@@ -205,7 +203,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     display: 'flex',
     flexFlow: 'row wrap',
-    justifyContent: 'center', //space-evenly
+    justifyContent: 'center',
     alignItems: 'center',
   },
   leftContainer: {

@@ -4,7 +4,6 @@ import Box from '@material-ui/core/Box';
 import Skeleton from '@material-ui/lab/Skeleton';
 import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import BG1 from '../../images/BG1.png';
 import Tag from '../assets/Tag';
@@ -91,7 +90,6 @@ const useStyles = makeStyles(() => ({
     width: '70%',
     color: '#FFFFFF',
     fontWeight: 600,
-    // border: '2px solid pink',
   },
 }));
 

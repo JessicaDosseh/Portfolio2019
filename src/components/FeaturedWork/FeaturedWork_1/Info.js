@@ -114,7 +114,6 @@ const useStyles = makeStyles((theme) => ({
       background: '#FFFFFF',
       color: '#141414',
     },
-    // border: '2px solid red',
   },
   mainContainer: {
     width: '100%',
@@ -129,7 +128,6 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: 'column wrap',
     justifyContent: 'flex-start',
     padding: 20,
-    // border: '2px solid red',
   },
   rightContainer: {
     width: '450px',
@@ -137,7 +135,6 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: 'column wrap',
     justifyContent: 'flex-start',
     padding: 20,
-    // border: '2px solid red',
   },
   break: {
     width: '100%',

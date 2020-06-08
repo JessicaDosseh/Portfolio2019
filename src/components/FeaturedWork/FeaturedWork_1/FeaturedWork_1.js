@@ -3,8 +3,6 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Box from '@material-ui/core/Box';
 import Skeleton from '@material-ui/lab/Skeleton';
 import CardHeader from '@material-ui/core/CardHeader';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Info from './Info';
 import FeaturedWork_1 from '../../../images/FeaturedWork_1.png';
@@ -92,8 +90,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
-    // padding: 30,
-    // border: '2px solid orange',
   },
   break: {
     width: '100%',

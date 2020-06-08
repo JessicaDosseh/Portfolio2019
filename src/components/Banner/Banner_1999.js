@@ -85,8 +85,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'center',
-    // paddingTop: 70,
-    // paddingBottom: 100,
     '& dark': {
       background: '#141414',
       color: '#FFFFFF',

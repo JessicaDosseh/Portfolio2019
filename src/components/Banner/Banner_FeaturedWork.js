@@ -4,7 +4,6 @@ import Box from '@material-ui/core/Box';
 import Skeleton from '@material-ui/lab/Skeleton';
 import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 
 const Banner_FeaturedWork = (props) => {
@@ -64,10 +63,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'center',
-    // paddingTop: 70,
-    // paddingBottom: 100,
     '& dark': {
-      // background: '#141414',
       background: '#222222',
       color: '#FFFFFF',
     },
