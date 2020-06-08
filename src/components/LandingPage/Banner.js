@@ -9,7 +9,7 @@ import SmsIcon from '@material-ui/icons/Sms';
 import { blue, blueGrey, lightGreen } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import banner from '../../images/banner-img.png';
-import blinkBot from '../../images/blinkBot.gif';
+import blinkBot from '../../images/blinkBot-2.gif';
 import LambdaLogo from '../../images/LambdaSchool-logo.png';
 import BaxterMillLogo from '../../images/BaxterMill-logo.png';
 
@@ -150,7 +150,7 @@ const useStyles = makeStyles(() => ({
       color: '#FFFFFF',
     },
     '& light': {
-      background: '#F7F7F7',
+      // background: '#F7F7F7',
       color: '#141414',
     },
     marginTop: 30,
@@ -205,7 +205,7 @@ const useStyles = makeStyles(() => ({
   },
   img2: {
     width: '100%',
-    maxWidth: '300px',
+    maxWidth: '400px',
     height: 'auto',
     textAlign: 'center',
   },

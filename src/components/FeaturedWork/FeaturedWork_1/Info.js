@@ -123,18 +123,16 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   leftContainer: {
-    width: '450px',
+    width: '400px',
     display: 'flex',
     flexFlow: 'column wrap',
     justifyContent: 'flex-start',
-    padding: 20,
   },
   rightContainer: {
-    width: '450px',
+    width: '400px',
     display: 'flex',
     flexFlow: 'column wrap',
     justifyContent: 'flex-start',
-    padding: 20,
   },
   break: {
     width: '100%',

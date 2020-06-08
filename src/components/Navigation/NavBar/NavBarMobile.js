@@ -45,13 +45,44 @@ const NavBarMobile = (props) => {
                 loading ? (
                   <Skeleton className={classes.text} width={40} height={40} />
                 ) : (
-                  <Link to='/' className={(classes.root, classes.link)}>
-                    <color className={classes.root}>
-                      <Typography variant='h5' style={{ fontWeight: 600 }}>
-                        Jessica Dosseh
-                      </Typography>
-                    </color>
-                  </Link>
+                  <Box>
+                    {() => {
+                      switch (viewPort) {
+                        case true:
+                          return (
+                            <Link
+                              to='/'
+                              className={(classes.root, classes.link)}
+                            >
+                              <color className={classes.root}>
+                                <Typography
+                                  variant='body2'
+                                  style={{ fontWeight: 600 }}
+                                >
+                                  Jessica Dosseh
+                                </Typography>
+                              </color>
+                            </Link>
+                          );
+                        default:
+                          return (
+                            <Link
+                              to='/'
+                              className={(classes.root, classes.link)}
+                            >
+                              <color className={classes.root}>
+                                <Typography
+                                  variant='h5'
+                                  style={{ fontWeight: 600 }}
+                                >
+                                  Jessica Dosseh
+                                </Typography>
+                              </color>
+                            </Link>
+                          );
+                      }
+                    }}
+                  </Box>
                 )
               }
             />
