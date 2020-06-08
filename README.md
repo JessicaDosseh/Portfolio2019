@@ -26,7 +26,7 @@ In accordance with this, my portfolio is a way to express my passion for art and
 <br>
 | Web View | Mobile View | 
 | -------- | -------- |
-| ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FJessicaDosseh%2Fp43uUIokvV.png?alt=media&token=fb503699-9771-458f-9b92-7a2aa1ca45bf) | ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FJessicaDosseh%2FABJ-tEyXLq.png?alt=media&token=9c16f12a-e31f-4e35-8a70-afc8b62b80b3) |
+| ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FJessicaDosseh%2Fp43uUIokvV.png?alt=media&token=fb503699-9771-458f-9b92-7a2aa1ca45bf) | ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FJessicaDosseh%2FyjuL8W29mZ.png?alt=media&token=631fca75-01c2-46af-bb5e-d87db43a8a9e) |
 
 ---
 
