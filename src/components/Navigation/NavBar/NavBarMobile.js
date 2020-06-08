@@ -70,7 +70,7 @@ const NavBarMobile = (props) => {
                           return (
                             <FiberManualRecordTwoToneIcon
                               className={classes.mode}
-                              style={{ fontSize: 40, padding: '0 20 0 40' }}
+                              style={{ fontSize: 30, padding: '0 20 0 40' }}
                             />
                           );
                         default:
@@ -92,7 +92,7 @@ const NavBarMobile = (props) => {
                               </Link>
                               <FiberManualRecordTwoToneIcon
                                 className={classes.mode}
-                                style={{ fontSize: 40, padding: '0 20 0 40' }}
+                                style={{ fontSize: 30, padding: '0 20 0 40' }}
                               />
                             </Box>
                           );
@@ -138,21 +138,21 @@ const useStyles = makeStyles(() => ({
     textDecoration: 'none',
   },
   leftContainer: {
-    width: '30%',
+    width: '20%',
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'flex-start',
     alignItems: 'center',
   },
   rightContainer: {
-    width: '30%',
+    width: '20%',
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'flex-end',
     alignItems: 'center',
   },
   centerContainer: {
-    width: '30%',
+    width: '50%',
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'center',

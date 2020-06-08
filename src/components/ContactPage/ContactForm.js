@@ -114,8 +114,9 @@ const useStyles = makeStyles(() => ({
   root: {
     height: '90vh',
     display: 'flex',
-    flexFlow: 'row wrap',
-    justifyContent: 'space-evenly',
+    flexFlow: 'column wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
     background: '#FFFFFF',
   },
   mainContainer: {

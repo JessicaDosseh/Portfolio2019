@@ -6,8 +6,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import SmsIcon from '@material-ui/icons/Sms';
-import FaceIcon from '@material-ui/icons/Face';
-import { blue, blueGrey } from '@material-ui/core/colors';
+import { blue, blueGrey, lightGreen } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import banner from '../../images/banner-img.png';
 import blinkBot from '../../images/blinkBot.gif';
@@ -80,12 +79,12 @@ const Banner = (props) => {
                   ) : (
                     <Typography variant='h4' style={{ fontWeight: 600 }}>
                       I’m Jessica Dosseh, a Full Stack{' '}
-                      <blue style={{ color: blue.A700 }}>
+                      <blue style={{ color: lightGreen[500] }}>
                         Software Engineer
                       </blue>{' '}
                       , an Art Enthusiast &#38; currently a student at Lambda
                       School!{' '}
-                      <Link style={{ color: blue.A700 }}>
+                      <Link style={{ color: lightGreen[500] }}>
                         Let’s talk. <SmsIcon style={{ color: blueGrey[300] }} />
                       </Link>
                     </Typography>
@@ -131,11 +130,6 @@ const Banner = (props) => {
                   )
                 }
               />
-              <CardHeader
-                subheader={
-                  loading ? <Skeleton width={500} height={400} /> : null
-                }
-              />
             </Box>
           </Box>
         </Box>
@@ -159,7 +153,7 @@ const useStyles = makeStyles(() => ({
       background: '#F7F7F7',
       color: '#141414',
     },
-    marginTop: 39,
+    marginTop: 30,
   },
   mainContainer: {
     width: '100%',

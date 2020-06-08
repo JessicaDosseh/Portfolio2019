@@ -93,7 +93,7 @@ const NavBarWeb = (props) => {
                     </Link>
                     <FiberManualRecordTwoToneIcon
                       className={classes.mode}
-                      style={{ fontSize: 40, padding: '0 20 0 40' }}
+                      style={{ fontSize: 30, padding: '0 20 0 40' }}
                     />
                   </Box>
                 )

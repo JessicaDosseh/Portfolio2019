@@ -6,7 +6,8 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import FaceIcon from '@material-ui/icons/Face';
-import { blue } from '@material-ui/core/colors';
+import BeenhereIcon from '@material-ui/icons/Beenhere';
+import { blue, lightGreen } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 
 const Info = (props) => {
@@ -66,9 +67,14 @@ const Info = (props) => {
                               <Link href='https://medium.com/@jessica.dosseh/lambda-school-and-the-art-of-shifting-to-tech-588a18f24c4'>
                                 <Typography
                                   variant='h6'
-                                  style={{ fontWeight: 600, color: blue.A700 }}
+                                  style={{
+                                    fontWeight: 600,
+                                    color: lightGreen[500],
+                                  }}
                                 >
-                                  <FaceIcon style={{ color: blue.A700 }} />
+                                  <BeenhereIcon
+                                    style={{ color: lightGreen.A700 }}
+                                  />
                                   <br />
                                   Read My Shift To Tech Article
                                 </Typography>
