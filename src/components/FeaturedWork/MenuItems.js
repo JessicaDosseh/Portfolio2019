@@ -13,7 +13,9 @@ import LanguageIcon from '@material-ui/icons/Language';
 import Tooltip from '@material-ui/core/Tooltip';
 import { blue, grey } from '@material-ui/core/colors';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
-import TechStack from './TechStack';
+import WebDev from './WebDev/WebDev';
+import IdentityDesign from './IdentityDesign/IdentityDesign';
+import Editorial from '../../images/Editorial.png';
 
 const useStylesBootstrap = makeStyles((theme) => ({
   arrow: {
@@ -63,7 +65,7 @@ function a11yProps(index) {
   };
 }
 
-const Menu = (props) => {
+const MenuItems = (props) => {
   const classes = useStyles();
   const { loading = false } = props;
 
@@ -88,52 +90,27 @@ const Menu = (props) => {
                     onChange={handleChange}
                     aria-label='simple tabs example'
                   >
-                    <AntTab label='Links' {...a11yProps(0)} />
-                    <AntTab label='Tech Stack' {...a11yProps(1)} />
-                    <AntTab label='Description' {...a11yProps(2)} />
+                    <AntTab label='Web Development' {...a11yProps(0)} />
+                    <AntTab label='Identity Design' {...a11yProps(1)} />
+                    {/* <AntTab label='Editorial' {...a11yProps(2)} /> */}
                   </AntTabs>
                 </Box>
 
                 <TabPanel value={value} index={0}>
                   <Box className={classes.tab}>
-                    <Box className={classes.space}>
-                      <BootstrapTooltip title='Source Code' arrow>
-                        <IconButton href='https://github.com/Lambda-School-Labs/omega2020-fe'>
-                          <GitHubIcon style={{ color: blue.A700 }} />
-                        </IconButton>
-                      </BootstrapTooltip>
-                      <BootstrapTooltip title='Website' arrow>
-                        <IconButton href='https://omega2020.netlify.app/'>
-                          <LanguageIcon style={{ color: blue.A700 }} />
-                        </IconButton>
-                      </BootstrapTooltip>
-                    </Box>
+                    <WebDev />
                   </Box>
                 </TabPanel>
 
                 <TabPanel value={value} index={1}>
-                  <Box className={classes.tab}>
-                    <TechStack />
-                  </Box>
+                  <IdentityDesign />
                 </TabPanel>
 
-                <TabPanel value={value} index={2}>
+                {/* <TabPanel value={value} index={2}>
                   <Box className={classes.tab}>
-                    <Typography>
-                      Lorem ipsum dolor sit amet, pri fugit facer suavitate in,
-                      modo doming eruditi cu sea. Ad eum quis nominati, sea eu
-                      movet epicurei concludaturque, nisl feugiat ut vel. Vim in
-                      exerci doming theophrastus, in eos oblique scaevola
-                      inciderint. Alii salutandi pri id. An usu diam tempor, cu
-                      cum quas splendide. Quem expetendis sententiae eu vix, no
-                      per epicuri percipit oportere. Pro an consulatu
-                      necessitatibus, alia qualisque ex eos. An usu diam tempor,
-                      cu cum quas splendide. Quem expetendis sententiae eu vix,
-                      no per epicuri percipit oportere. Pro an consulatu
-                      necessitatibus, alia qualisque ex eos.
-                    </Typography>
+                    <img src={Editorial} alt='Project' width={'70%'} />
                   </Box>
-                </TabPanel>
+                </TabPanel> */}
               </Box>
             )
           }
@@ -171,18 +148,15 @@ const AntTab = withStyles((theme) => ({
       '"Segoe UI Symbol"',
     ].join(','),
     '&:hover': {
-      // color: '#40a9ff',
-      color: '#000000',
+      color: '#FFFFFF',
       opacity: 1,
     },
     '&$selected': {
-      // color: '#1890ff',
-      color: '#000000',
+      color: '#FFFFFF',
       fontWeight: theme.typography.fontWeightMedium,
     },
     '&:focus': {
-      // color: '#40a9ff',
-      color: '#000000',
+      color: '#FFFFFF',
     },
   },
   selected: {},
@@ -194,7 +168,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'space-evenly',
-    // background: '#FFFFFF',
+    background: '#000000',
+    color: '#FFFFFF',
   },
   mainContainer: {
     flexGrow: 1,
@@ -208,4 +183,4 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default Menu;
+export default MenuItems;
