@@ -1,6 +1,6 @@
 <div align="center">
    
-<h1 align="canter"><img src="assets/favicon.png" width = "250"/></h1>
+<h1 align="canter"><img src="assets/favicon.png" width = "150"/></h1>
 <br>
 
 </div>
