@@ -27,7 +27,7 @@ In accordance with this, my portfolio is a way to express my passion for art and
 | | |
 | -------- | -------- |
 | :desktop_computer: ____ Mac View | | 
-| ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FJessicaDosseh%2Fp43uUIokvV.png?alt=media&token=fb503699-9771-458f-9b92-7a2aa1ca45bf) | ![Website](https://img.shields.io/website?color=green&style=flat-square&url=https://omega2020.netlify.app/) |
+| ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FJessicaDosseh%2Fp43uUIokvV.png?alt=media&token=fb503699-9771-458f-9b92-7a2aa1ca45bf) | <div align="center"> ![Website](https://img.shields.io/website?color=green&style=flat-square&url=https://jessicadosseh.netlify.app/) </div> |
 | :desktop_computer: ____ Windows View | :iphone: ____ Mobile View |
 | ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FJessicaDosseh%2FyjAopOI06l.png?alt=media&token=82a80597-8a36-466f-82f9-c7eb2a0651a8) | ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FJessicaDosseh%2FyjuL8W29mZ.png?alt=media&token=631fca75-01c2-46af-bb5e-d87db43a8a9e) |
 
