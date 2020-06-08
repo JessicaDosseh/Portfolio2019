@@ -5,6 +5,7 @@ import Skeleton from '@material-ui/lab/Skeleton';
 import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import FiberManualRecordTwoToneIcon from '@material-ui/icons/FiberManualRecordTwoTone';
+import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import { blue } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -91,7 +92,7 @@ const NavBarWeb = (props) => {
                         </Typography>
                       </color>
                     </Link>
-                    <FiberManualRecordTwoToneIcon
+                    <LocalCafeIcon
                       className={classes.mode}
                       style={{ fontSize: 30, padding: '0 20 0 40' }}
                     />

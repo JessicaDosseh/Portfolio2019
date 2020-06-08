@@ -7,6 +7,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import MenuIcon from '@material-ui/icons/Menu';
 import FiberManualRecordTwoToneIcon from '@material-ui/icons/FiberManualRecordTwoTone';
+import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import { blue } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -99,9 +100,9 @@ const NavBarMobile = (props) => {
                       switch (viewPort) {
                         case true:
                           return (
-                            <FiberManualRecordTwoToneIcon
+                            <LocalCafeIcon
                               className={classes.mode}
-                              style={{ fontSize: 30, padding: '0 20 0 40' }}
+                              style={{ fontSize: 30, padding: '0 0 0 40' }}
                             />
                           );
                         default:
@@ -121,7 +122,7 @@ const NavBarMobile = (props) => {
                                   </Typography>
                                 </color>
                               </Link>
-                              <FiberManualRecordTwoToneIcon
+                              <LocalCafeIcon
                                 className={classes.mode}
                                 style={{ fontSize: 30, padding: '0 20 0 40' }}
                               />

@@ -34,10 +34,7 @@ const Banner = (props) => {
             switch (viewPort) {
               case true:
                 return (
-                  <Box className={classes.container} className={classes.img2}>
-                    <br />
-                    {/* <img src={banner} alt='banner' className={classes.img2} /> */}
-                    {/* <FaceIcon style={{ fontSize: 200, color: blue.A700 }} /> */}
+                  <Box>
                     <img src={blinkBot} alt='banner' className={classes.img2} />
                   </Box>
                 );
@@ -204,7 +201,6 @@ const useStyles = makeStyles(() => ({
     height: 'auto',
   },
   img2: {
-    width: '100%',
     maxWidth: '400px',
     height: 'auto',
     textAlign: 'center',
