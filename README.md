@@ -24,11 +24,11 @@ A personal portfolio allows each individual to put a personal touch and emphasis
 
 In accordance with this, my portfolio is a way to express my passion for art and technology.  It's because of my love for clean design and minimalistic perspectives that I put together a portfolio that encompasses the use of cutting-edge technology and minimalistic design. 
 <br>
-| :desktop_computer:  | :iphone: | 
+| | | 
 | -------- | -------- |
-| Mac View | | 
+| :desktop_computer: Mac View | | 
 | ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FJessicaDosseh%2Fp43uUIokvV.png?alt=media&token=fb503699-9771-458f-9b92-7a2aa1ca45bf) |  |
-| Windows View | Mobile View |
+| :desktop_computer: Windows View | :iphone: Mobile View |
 | ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FJessicaDosseh%2FyjAopOI06l.png?alt=media&token=82a80597-8a36-466f-82f9-c7eb2a0651a8) | ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FJessicaDosseh%2FyjuL8W29mZ.png?alt=media&token=631fca75-01c2-46af-bb5e-d87db43a8a9e) |
 
 ---
