@@ -11,6 +11,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LanguageIcon from '@material-ui/icons/Language';
 import DescriptionIcon from '@material-ui/icons/Description';
 import BuildIcon from '@material-ui/icons/Build';
+import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import Tooltip from '@material-ui/core/Tooltip';
 import { grey } from '@material-ui/core/colors';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
@@ -90,7 +91,10 @@ const Menu = (props) => {
                     onChange={handleChange}
                     aria-label='simple tabs example'
                   >
-                    <AntTab label='Tech Stuff' {...a11yProps(0)} />
+                    <AntTab
+                      label={<KeyboardArrowRightIcon />}
+                      {...a11yProps(0)}
+                    />
                     <AntTab label={<DescriptionIcon />} {...a11yProps(1)} />
                     <AntTab label={<BuildIcon />} {...a11yProps(2)} />
                   </AntTabs>
@@ -152,7 +156,7 @@ const AntTab = withStyles((theme) => ({
     textTransform: 'none',
     minWidth: 72,
     fontWeight: theme.typography.fontWeightRegular,
-    marginRight: theme.spacing(2),
+    // marginRight: theme.spacing(2),
     fontFamily: [
       '-apple-system',
       'BlinkMacSystemFont',

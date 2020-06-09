@@ -28,7 +28,14 @@ const Info = (props) => {
         {(() => {
           switch (viewPort) {
             case true:
-              return <Menu2 />;
+              return (
+                <Box>
+                  <Typography variant='body2' style={{ fontWeight: 600 }}>
+                    Use My Tech Stuff
+                  </Typography>
+                  <Menu2 />
+                </Box>
+              );
             default:
               return (
                 <Box className={classes.mainContainer}>
@@ -43,7 +50,7 @@ const Info = (props) => {
                               variant='h5'
                               style={{ fontWeight: 600 }}
                             >
-                              Tech Stuff
+                              Use My Tech Stuff
                             </Typography>
                           )
                         }

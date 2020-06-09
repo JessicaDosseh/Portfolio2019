@@ -28,7 +28,14 @@ const Info = (props) => {
         {(() => {
           switch (viewPort) {
             case true:
-              return <Menu2 />;
+              return (
+                <Box>
+                  <Typography variant='body2' style={{ fontWeight: 600 }}>
+                    Essentialism
+                  </Typography>
+                  <Menu2 />
+                </Box>
+              );
             default:
               return (
                 <Box className={classes.mainContainer}>
