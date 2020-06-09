@@ -90,7 +90,7 @@ const Menu = (props) => {
                     onChange={handleChange}
                     aria-label='simple tabs example'
                   >
-                    <AntTab label='^ My Tech Stuff' {...a11yProps(0)} />
+                    <AntTab label='Tech Stuff' {...a11yProps(0)} />
                     <AntTab label={<DescriptionIcon />} {...a11yProps(1)} />
                     <AntTab label={<BuildIcon />} {...a11yProps(2)} />
                   </AntTabs>

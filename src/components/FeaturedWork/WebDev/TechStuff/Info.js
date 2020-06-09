@@ -43,7 +43,7 @@ const Info = (props) => {
                               variant='h5'
                               style={{ fontWeight: 600 }}
                             >
-                              My Tech Stuff
+                              Tech Stuff
                             </Typography>
                           )
                         }
