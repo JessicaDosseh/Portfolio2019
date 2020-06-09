@@ -109,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#FFFFFF',
   },
   leftContainer: {
-    width: '400px',
+    width: '300px',
     display: 'flex',
     flexFlow: 'column wrap',
     justifyContent: 'flex-start',

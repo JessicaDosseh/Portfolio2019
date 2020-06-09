@@ -88,21 +88,26 @@ const Menu = (props) => {
                     onChange={handleChange}
                     aria-label='simple tabs example'
                   >
-                    <AntTab label='Description' {...a11yProps(0)} />
-                    <AntTab label='Tech Stack' {...a11yProps(1)} />
+                    <AntTab label='^ Use My Tech Stuff' {...a11yProps(0)} />
+                    <AntTab label='Description' {...a11yProps(1)} />
+                    <AntTab label='Tech Stack' {...a11yProps(2)} />
                   </AntTabs>
                 </Box>
 
                 <TabPanel value={value} index={0}>
+                  <Box className={classes.tab}></Box>
+                </TabPanel>
+
+                <TabPanel value={value} index={1}>
                   <Box className={classes.tab}>
                     <Box className={classes.space}>
                       <BootstrapTooltip title='Source Code' arrow>
-                        <IconButton href='https://github.com/Essentialism-1-bw'>
+                        <IconButton href='https://github.com/use-my-tech-stuff-3-4'>
                           <GitHubIcon style={{ color: grey[50] }} />
                         </IconButton>
                       </BootstrapTooltip>
                       <BootstrapTooltip title='Website' arrow>
-                        <IconButton href='https://essentialism-fe.netlify.app/'>
+                        <IconButton href='https://use-my-tech-stuff-iota.now.sh/'>
                           <LanguageIcon style={{ color: grey[50] }} />
                         </IconButton>
                       </BootstrapTooltip>
@@ -117,7 +122,7 @@ const Menu = (props) => {
                   </Box>
                 </TabPanel>
 
-                <TabPanel value={value} index={1}>
+                <TabPanel value={value} index={2}>
                   <Box className={classes.tab}>
                     <TechStack />
                   </Box>

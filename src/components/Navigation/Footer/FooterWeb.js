@@ -134,7 +134,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   leftContainer: {
-    width: '49%',
+    width: '39%',
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'left',
@@ -142,7 +142,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: '10px',
   },
   rightContainer: {
-    width: '50%',
+    width: '60%',
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'flex-end',

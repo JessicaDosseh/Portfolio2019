@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import { blue, grey } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import Menu from './Menu';
+import Menu2 from './Menu2';
 
 const Info = (props) => {
   const classes = useStyles();
@@ -24,29 +25,32 @@ const Info = (props) => {
   return (
     <Box className={classes.root}>
       <dark>
-        <Box className={classes.mainContainer}>
-          <Box className={classes.leftContainer}>
-            <Box className={classes.container}>
-              <CardHeader
-                title={
-                  loading ? (
-                    <Skeleton className={classes.title} />
-                  ) : (
-                    <Typography variant='h5' style={{ fontWeight: 600 }}>
-                      Use My Tech Stuff
-                    </Typography>
-                  )
-                }
-              />
-            </Box>
-          </Box>
+        {(() => {
+          switch (viewPort) {
+            case true:
+              return <Menu2 />;
+            default:
+              return (
+                <Box className={classes.mainContainer}>
+                  <Box className={classes.leftContainer}>
+                    <Box className={classes.container}>
+                      <CardHeader
+                        title={
+                          loading ? (
+                            <Skeleton className={classes.title} />
+                          ) : (
+                            <Typography
+                              variant='h5'
+                              style={{ fontWeight: 600 }}
+                            >
+                              Use My Tech Stuff
+                            </Typography>
+                          )
+                        }
+                      />
+                    </Box>
+                  </Box>
 
-          {(() => {
-            switch (viewPort) {
-              case true:
-                return null;
-              default:
-                return (
                   <Box className={classes.rightContainer}>
                     <Box className={classes.container}>
                       <CardHeader
@@ -63,10 +67,10 @@ const Info = (props) => {
                       />
                     </Box>
                   </Box>
-                );
-            }
-          })()}
-        </Box>
+                </Box>
+              );
+          }
+        })()}
       </dark>
     </Box>
   );

@@ -15,8 +15,8 @@ import MaterialUIIcon from '../../../images/TechStackIcons/material-ui.png';
 import YarnIcon from '../../../images//TechStackIcons/yarn.png';
 
 const columns = [
-  { id: 'icon', label: 'Icon', minWidth: 100 },
-  { id: 'stack', label: 'Stack', minWidth: 170 },
+  { id: 'icon', label: '</>', minWidth: 5 },
+  { id: 'stack', label: 'Stack', minWidth: 10 },
 ];
 
 function createData(icon, stack) {

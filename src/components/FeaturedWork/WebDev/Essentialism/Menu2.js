@@ -88,12 +88,17 @@ const Menu = (props) => {
                     onChange={handleChange}
                     aria-label='simple tabs example'
                   >
-                    <AntTab label='Description' {...a11yProps(0)} />
-                    <AntTab label='Tech Stack' {...a11yProps(1)} />
+                    <AntTab label='^ Essentialism' {...a11yProps(0)} />
+                    <AntTab label='Description' {...a11yProps(1)} />
+                    <AntTab label='Tech Stack' {...a11yProps(2)} />
                   </AntTabs>
                 </Box>
 
                 <TabPanel value={value} index={0}>
+                  <Box className={classes.tab}></Box>
+                </TabPanel>
+
+                <TabPanel value={value} index={1}>
                   <Box className={classes.tab}>
                     <Box className={classes.space}>
                       <BootstrapTooltip title='Source Code' arrow>
@@ -117,7 +122,7 @@ const Menu = (props) => {
                   </Box>
                 </TabPanel>
 
-                <TabPanel value={value} index={1}>
+                <TabPanel value={value} index={2}>
                   <Box className={classes.tab}>
                     <TechStack />
                   </Box>

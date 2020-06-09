@@ -88,9 +88,8 @@ const Menu = (props) => {
                     onChange={handleChange}
                     aria-label='simple tabs example'
                   >
-                    <AntTab label='Links' {...a11yProps(0)} />
+                    <AntTab label='Description' {...a11yProps(0)} />
                     <AntTab label='Tech Stack' {...a11yProps(1)} />
-                    <AntTab label='Description' {...a11yProps(2)} />
                   </AntTabs>
                 </Box>
 
@@ -108,17 +107,6 @@ const Menu = (props) => {
                         </IconButton>
                       </BootstrapTooltip>
                     </Box>
-                  </Box>
-                </TabPanel>
-
-                <TabPanel value={value} index={1}>
-                  <Box className={classes.tab}>
-                    <TechStack />
-                  </Box>
-                </TabPanel>
-
-                <TabPanel value={value} index={2}>
-                  <Box className={classes.tab}>
                     <Typography>
                       Lorem ipsum dolor sit amet, pri fugit facer suavitate in,
                       modo doming eruditi cu sea. Ad eum quis nominati, sea eu
@@ -126,6 +114,12 @@ const Menu = (props) => {
                       exerci doming theophrastus, in eos oblique scaevola
                       inciderint. Alii salutandi pri id.
                     </Typography>
+                  </Box>
+                </TabPanel>
+
+                <TabPanel value={value} index={1}>
+                  <Box className={classes.tab}>
+                    <TechStack />
                   </Box>
                 </TabPanel>
               </Box>
