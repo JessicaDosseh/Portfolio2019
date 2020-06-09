@@ -3,6 +3,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Box from '@material-ui/core/Box';
 import Skeleton from '@material-ui/lab/Skeleton';
 import CardHeader from '@material-ui/core/CardHeader';
+import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Info from './Info';
 import FeaturedWork_1 from '../../../images/FeaturedWork_1.png';
@@ -42,11 +43,13 @@ const FeaturedWork = (props) => {
                         loading ? (
                           <Skeleton className={classes.title} />
                         ) : (
-                          <img
-                            src={FeaturedWork_1}
-                            alt='omega2020'
-                            width={'70%'}
-                          />
+                          <Link href='https://omega2020.netlify.app/'>
+                            <img
+                              src={FeaturedWork_1}
+                              alt='omega2020'
+                              width={'70%'}
+                            />
+                          </Link>
                         )
                       }
                     />

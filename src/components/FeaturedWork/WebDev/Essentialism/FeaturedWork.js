@@ -4,6 +4,7 @@ import Box from '@material-ui/core/Box';
 import Skeleton from '@material-ui/lab/Skeleton';
 import CardHeader from '@material-ui/core/CardHeader';
 import BurstModeIcon from '@material-ui/icons/BurstMode';
+import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Info from './Info';
 import FeaturedWorkIMG from '../../../../images/FeaturedWork_2.png';
@@ -42,12 +43,13 @@ const FeaturedWork = (props) => {
                         loading ? (
                           <Skeleton className={classes.title} />
                         ) : (
-                          <img
-                            src={FeaturedWorkIMG}
-                            alt='Project'
-                            width={'100%'}
-                          />
-                          // <BurstModeIcon style={{ fontSize: 100 }} />
+                          <Link href='https://essentialism-fe.netlify.app/'>
+                            <img
+                              src={FeaturedWorkIMG}
+                              alt='Project'
+                              width={'100%'}
+                            />
+                          </Link>
                         )
                       }
                     />

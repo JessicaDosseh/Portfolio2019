@@ -108,11 +108,13 @@ const Menu = (props) => {
                       </BootstrapTooltip>
                     </Box>
                     <Typography>
-                      Lorem ipsum dolor sit amet, pri fugit facer suavitate in,
-                      modo doming eruditi cu sea. Ad eum quis nominati, sea eu
-                      movet epicurei concludaturque, nisl feugiat ut vel. Vim in
-                      exerci doming theophrastus, in eos oblique scaevola
-                      inciderint. Alii salutandi pri id.
+                      Use My Tech Stuff — React Web Application | (Team project)
+                      December 2019. This project was completed with a team of
+                      two Front-end developers, a Back-end developer, and a
+                      project lead within two weeks. The goal of this project
+                      was to show mastery of the skills we gained / learned
+                      while going through our web development curriculum. I was
+                      responsible for the React portion of this project + UI.
                     </Typography>
                   </Box>
                 </TabPanel>

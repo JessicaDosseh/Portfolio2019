@@ -108,11 +108,15 @@ const Menu = (props) => {
                       </BootstrapTooltip>
                     </Box>
                     <Typography>
-                      Lorem ipsum dolor sit amet, pri fugit facer suavitate in,
-                      modo doming eruditi cu sea. Ad eum quis nominati, sea eu
-                      movet epicurei concludaturque, nisl feugiat ut vel. Vim in
-                      exerci doming theophrastus, in eos oblique scaevola
-                      inciderint. Alii salutandi pri id.
+                      Essentialism — React Web Application | (Team project)
+                      November 2019. This was my first react project and the
+                      first time I used Material-UI. This project was completed
+                      with a team of three Front-end developers, a Back-end
+                      developer, and a project lead. This project was an
+                      interesting one. We ended up running into a lot of
+                      problems because we lost one of our developers
+                      mid-project; however, we managed to pick ourselves back up
+                      to complete the project before the deadline.
                     </Typography>
                   </Box>
                 </TabPanel>

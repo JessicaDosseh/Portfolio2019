@@ -86,8 +86,7 @@ const Menu = (props) => {
                     onChange={handleChange}
                     aria-label='simple tabs example'
                   >
-                    <AntTab label='Links' {...a11yProps(0)} />
-                    <AntTab label='Description' {...a11yProps(1)} />
+                    <AntTab label='Description' {...a11yProps(0)} />
                   </AntTabs>
                 </Box>
 
@@ -100,17 +99,12 @@ const Menu = (props) => {
                         </IconButton>
                       </BootstrapTooltip>
                     </Box>
-                  </Box>
-                </TabPanel>
-
-                <TabPanel value={value} index={1}>
-                  <Box className={classes.tab}>
                     <Typography>
-                      Lorem ipsum dolor sit amet, pri fugit facer suavitate in,
-                      modo doming eruditi cu sea. Ad eum quis nominati, sea eu
-                      movet epicurei concludaturque, nisl feugiat ut vel. Vim in
-                      exerci doming theophrastus, in eos oblique scaevola
-                      inciderint. Alii salutandi pri id.
+                      The purpose of CORE (Computing Oriented Representation
+                      &#38; Engagement) is to increase the participation of
+                      women, underrepresented persons, and persons with
+                      disabilities in computing disciplines through multifaceted
+                      interventions.
                     </Typography>
                   </Box>
                 </TabPanel>

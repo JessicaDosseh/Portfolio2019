@@ -13,6 +13,7 @@ import ReactIcon from '../../../images/TechStackIcons/react.png';
 import CSSIcon from '../../../images/TechStackIcons/css3.png';
 import MaterialUIIcon from '../../../images/TechStackIcons/material-ui.png';
 import YarnIcon from '../../../images//TechStackIcons/yarn.png';
+import Stack from '../../../images/TechStackIcons/stack.png';
 
 const columns = [
   { id: 'icon', label: '</>', minWidth: 5 },
@@ -29,6 +30,8 @@ const rows = [
   createData(<img src={MaterialUIIcon} width='30' />, 'Material-UI'),
   createData(<img src={CSSIcon} width='30' />, 'CSS'),
   createData(<img src={YarnIcon} width='30' />, 'Yarn'),
+  createData(<img src={Stack} width='30' />, 'axios'),
+  createData(<img src={Stack} width='30' />, 'React Router'),
 ];
 
 const useStyles = makeStyles({
