@@ -9,6 +9,8 @@ import PropTypes from 'prop-types';
 import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LanguageIcon from '@material-ui/icons/Language';
+import DescriptionIcon from '@material-ui/icons/Description';
+import BuildIcon from '@material-ui/icons/Build';
 import Tooltip from '@material-ui/core/Tooltip';
 import { grey } from '@material-ui/core/colors';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
@@ -89,8 +91,8 @@ const Menu = (props) => {
                     aria-label='simple tabs example'
                   >
                     <AntTab label='^ Essentialism' {...a11yProps(0)} />
-                    <AntTab label='Description' {...a11yProps(1)} />
-                    <AntTab label='Tech Stack' {...a11yProps(2)} />
+                    <AntTab label={<DescriptionIcon />} {...a11yProps(1)} />
+                    <AntTab label={<BuildIcon />} {...a11yProps(2)} />
                   </AntTabs>
                 </Box>
 
@@ -150,7 +152,7 @@ const AntTab = withStyles((theme) => ({
     textTransform: 'none',
     minWidth: 72,
     fontWeight: theme.typography.fontWeightRegular,
-    marginRight: theme.spacing(4),
+    marginRight: theme.spacing(2),
     fontFamily: [
       '-apple-system',
       'BlinkMacSystemFont',
@@ -180,7 +182,7 @@ const AntTab = withStyles((theme) => ({
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
+    width: '90%',
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'space-evenly',
