@@ -10,7 +10,7 @@
 
 ![APM](https://img.shields.io/apm/l/vim-mode?style=for-the-badge)
 ![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)
-![yarn](https://img.shields.io/npm/v/npm?color=orange&style=for-the-badge)
+![npm](https://img.shields.io/npm/v/npm?color=orange&style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/JessicaDosseh/Omega-Web-App?color=yellow&style=for-the-badge)
 
 ![React](https://img.shields.io/badge/react-v16.12.0-blue.svg?style=for-the-badge)
