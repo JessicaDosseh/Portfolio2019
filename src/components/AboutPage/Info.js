@@ -5,10 +5,10 @@ import Skeleton from '@material-ui/lab/Skeleton';
 import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-import FaceIcon from '@material-ui/icons/Face';
 import BeenhereIcon from '@material-ui/icons/Beenhere';
 import { blue, lightGreen } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
+import Skills from './Skills';
 
 const Info = (props) => {
   const classes = useStyles();
@@ -96,9 +96,31 @@ const Info = (props) => {
                   loading ? (
                     <Skeleton className={classes.title} variant='rectangle' />
                   ) : (
-                    <Typography variant='caption' style={{ fontWeight: 600 }}>
-                      My story.
-                    </Typography>
+                    <Box>
+                      <Typography
+                        variant='subtitle2.'
+                        style={{ fontWeight: 600 }}
+                      >
+                        My Skills.
+                      </Typography>
+                      <Skills />
+                    </Box>
+                  )
+                }
+              />
+              <CardHeader
+                subheader={
+                  loading ? (
+                    <Skeleton className={classes.title} variant='rectangle' />
+                  ) : (
+                    <Box>
+                      <Typography
+                        variant='subtitle2.'
+                        style={{ fontWeight: 600 }}
+                      >
+                        My story.
+                      </Typography>
+                    </Box>
                   )
                 }
               />
