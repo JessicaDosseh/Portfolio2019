@@ -69,7 +69,7 @@ const About = (props) => {
                                 variant='caption'
                                 style={{ fontWeight: 600 }}
                               >
-                                — About
+                                — [BE HONEST BE HUMBLE BE KIND]
                               </Typography>
                               <br />
                               <br />

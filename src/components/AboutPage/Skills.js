@@ -8,10 +8,11 @@ import Tab from '@material-ui/core/Tab';
 import PropTypes from 'prop-types';
 import CodeIcon from '@material-ui/icons/Code';
 import BuildIcon from '@material-ui/icons/Build';
-import AddIcon from '@material-ui/icons/Add';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 import Tooltip from '@material-ui/core/Tooltip';
 import { blue, grey } from '@material-ui/core/colors';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
+import Stack from '../../images/TechStackIcons/stack.png';
 
 const useStylesBootstrap = makeStyles((theme) => ({
   arrow: {
@@ -89,7 +90,8 @@ const Skills = (props) => {
                     <AntTab
                       label={
                         <BootstrapTooltip title='Languages / Frameworks'>
-                          <CodeIcon />
+                          {/* <CodeIcon /> */}
+                          <img src={Stack} width='30' />
                         </BootstrapTooltip>
                       }
                       {...a11yProps(0)}
@@ -105,7 +107,7 @@ const Skills = (props) => {
                     <AntTab
                       label={
                         <BootstrapTooltip title='Related Skills'>
-                          <AddIcon />
+                          <AddCircleIcon />
                         </BootstrapTooltip>
                       }
                       {...a11yProps(2)}

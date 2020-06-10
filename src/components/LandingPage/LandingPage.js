@@ -9,6 +9,7 @@ import AboutPage from '../AboutPage/AboutPage';
 import Contact from '../ContactPage/ContactForm';
 import Banner_1999 from '../Banner/Banner_1999';
 import FooterCondition from '../Navigation/FooterCondition';
+// import ArchivePage from '../ArchivePage/ArchivePage';
 
 const LandingPage = () => {
   return (
@@ -20,6 +21,7 @@ const LandingPage = () => {
       <Banner_SkillAbout />
       <AboutPage />
       <Banner_1999 />
+      {/* <ArchivePage /> */}
       <FooterCondition />
     </Box>
   );

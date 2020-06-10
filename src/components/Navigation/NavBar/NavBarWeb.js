@@ -58,7 +58,7 @@ const NavBarWeb = (props) => {
                           variant='subtitle2'
                           style={{ fontWeight: 600 }}
                         >
-                          My Skills
+                          Skills &#38; About
                         </Typography>
                       </color>
                     </Link>
@@ -68,7 +68,7 @@ const NavBarWeb = (props) => {
                           variant='subtitle2'
                           style={{ fontWeight: 600 }}
                         >
-                          About Me
+                          The Archive
                         </Typography>
                       </color>
                     </Link>
