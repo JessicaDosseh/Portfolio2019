@@ -10,6 +10,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import MenuIcon from '@material-ui/icons/Menu';
 import FiberManualRecordTwoToneIcon from '@material-ui/icons/FiberManualRecordTwoTone';
+import CloseIcon from '@material-ui/icons/Close';
 import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import { blue } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
@@ -29,6 +30,8 @@ const NavBarMobile = observer((props) => {
     viewPort = false;
   }
 
+  console.log(routerStore.screen);
+
   return (
     <Box className={classes.core}>
       <Box className={classes.root} boxShadow={4}>
@@ -39,16 +42,42 @@ const NavBarMobile = observer((props) => {
                 loading ? (
                   <Skeleton className={classes.text} width={40} height={40} />
                 ) : (
-                  <Button
-                    className={classes.button}
-                    onClick={() => {
-                      routerStore.screen = 'ArchivePage';
+                  <Box>
+                    {() => {
+                      switch (routerStore.screen) {
+                        case 'ArchivePage':
+                          return (
+                            <Button
+                              className={classes.button}
+                              onClick={() => {
+                                routerStore.screen = 'LandingPage';
+                              }}
+                            >
+                              <color>
+                                <CloseIcon
+                                  style={{ fontSize: 30, paddingTop: 10 }}
+                                />
+                              </color>
+                            </Button>
+                          );
+                        default:
+                          return (
+                            <Button
+                              className={classes.button}
+                              onClick={() => {
+                                routerStore.screen = 'ArchivePage';
+                              }}
+                            >
+                              <color>
+                                <FiberManualRecordTwoToneIcon
+                                  style={{ fontSize: 30, paddingTop: 10 }}
+                                />
+                              </color>
+                            </Button>
+                          );
+                      }
                     }}
-                  >
-                    <color>
-                      <MenuIcon style={{ fontSize: 30, paddingTop: 10 }} />
-                    </color>
-                  </Button>
+                  </Box>
                 )
               }
             />

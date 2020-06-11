@@ -81,7 +81,10 @@ const Banner = (props) => {
                       </blue>{' '}
                       , an Art Enthusiast &#38; currently a student at Lambda
                       School!{' '}
-                      <Link style={{ color: lightGreen[500] }}>
+                      <Link
+                        href='mailto:Hello@JessicaDosseh.com'
+                        style={{ color: lightGreen[500] }}
+                      >
                         Let’s talk. <SmsIcon style={{ color: blueGrey[300] }} />
                       </Link>
                     </Typography>

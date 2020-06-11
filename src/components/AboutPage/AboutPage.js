@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
     <Box>
       <About />
-      <hr width='50%' />
+      <hr width='55%' />
       <Info />
     </Box>
   );

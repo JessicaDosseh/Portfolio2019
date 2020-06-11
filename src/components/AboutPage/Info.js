@@ -147,18 +147,19 @@ const Info = (props) => {
                       <br />
                       <br />
                       <Typography variant='subheader2'>
-                        Lorem ipsum dolor sit amet, pri fugit facer suavitate
-                        in, modo doming eruditi cu sea. Ad eum quis nominati,
-                        sea eu movet epicurei concludaturque, nisl feugiat ut
-                        vel. Vim in exerci doming theophrastus, in eos oblique
-                        scaevola inciderint. Alii salutandi pri id. An usu diam
-                        tempor, cu cum quas splendide. Quem expetendis
-                        sententiae eu vix, no per epicuri percipit oportere. Pro
-                        an consulatu necessitatibus, alia qualisque ex eos. An
-                        usu diam tempor, cu cum quas splendide. Quem expetendis
-                        sententiae eu vix, no per epicuri percipit oportere. Pro
-                        an consulatu necessitatibus, alia qualisque ex eos.you
-                        get to where you are (be honest, be humble, be kind)
+                        I like to think that my curiosity knows no bounds. I
+                        have a deep desire to understand how things work and how
+                        to build stuff — all kinds of stuff. That's at the core
+                        of why I love tech. But more than that, I love coding
+                        because of the way it feels. You know that feeling when
+                        you're in the ZONE; when the rest of the world seems to
+                        fade a little, and it's just you — your computer and
+                        your code. I'm not really sure how to describe that
+                        feeling, but it's a little nostalgic, peaceful, serene.
+                        Don't Get me wrong though I know coding isn't always
+                        peaceful with the endless debugging and hills of stress;
+                        nevertheless, the O(n) at the end of the tune after
+                        refactoring endless nested for-loops is always worth it.
                       </Typography>
                       <br />
                       <br />
@@ -208,7 +209,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'center',
-    paddingTop: 70,
+    paddingTop: 20,
     paddingBottom: 100,
     '& dark': {
       background: '#141414',
