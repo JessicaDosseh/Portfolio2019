@@ -8,7 +8,7 @@ const Banner_JustATypo = (props) => {
 
   return (
     <Box className={classes.root}>
-      <img src={JustATypo} alt='Just A Typo' width={'100%'} />
+      <img src={JustATypo} alt='Just A Typo' width={'100%'} height={'auto'} />
     </Box>
   );
 };

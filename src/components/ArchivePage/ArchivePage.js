@@ -11,6 +11,7 @@ import Projects from './Projects';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
+    marginTop: 80,
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),

@@ -119,19 +119,7 @@ const Menu = (props) => {
 
                 <TabPanel value={value} index={2}>
                   <Box className={classes.tab}>
-                    <Typography>
-                      Lorem ipsum dolor sit amet, pri fugit facer suavitate in,
-                      modo doming eruditi cu sea. Ad eum quis nominati, sea eu
-                      movet epicurei concludaturque, nisl feugiat ut vel. Vim in
-                      exerci doming theophrastus, in eos oblique scaevola
-                      inciderint. Alii salutandi pri id. An usu diam tempor, cu
-                      cum quas splendide. Quem expetendis sententiae eu vix, no
-                      per epicuri percipit oportere. Pro an consulatu
-                      necessitatibus, alia qualisque ex eos. An usu diam tempor,
-                      cu cum quas splendide. Quem expetendis sententiae eu vix,
-                      no per epicuri percipit oportere. Pro an consulatu
-                      necessitatibus, alia qualisque ex eos.
-                    </Typography>
+                    <Typography>[CURRENTLY A WORK IN PROGRESS]</Typography>
                   </Box>
                 </TabPanel>
               </Box>

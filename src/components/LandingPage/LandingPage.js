@@ -14,6 +14,7 @@ import FooterCondition from '../Navigation/FooterCondition';
 const LandingPage = () => {
   return (
     <Box>
+      {/* <ArchivePage /> */}
       <Banner />
       <Banner_FeaturedWork />
       <Banner_JustATypo />
@@ -21,7 +22,6 @@ const LandingPage = () => {
       <Banner_SkillAbout />
       <AboutPage />
       <Banner_1999 />
-      {/* <ArchivePage /> */}
       <FooterCondition />
     </Box>
   );
