@@ -43,7 +43,7 @@ const FeaturedWork = (props) => {
                         loading ? (
                           <Skeleton className={classes.title} />
                         ) : (
-                          <Link href='https://use-my-tech-stuff-iota.now.sh/'>
+                          <Link href='https://github.com/use-my-tech-stuff-3-4'>
                             <img
                               src={FeaturedWorkIMG}
                               alt='Project'

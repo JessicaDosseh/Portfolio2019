@@ -9,19 +9,20 @@ const NavCondition = () => {
 
   const sm = useMediaQuery('(min-width: 980px)');
   const md = useMediaQuery('(min-width: 1500px)');
-  if (viewPort === md) {
-    return (
-      <AppBar position='static'>
-        <NavBarMobile />
-      </AppBar>
-    );
-  } else {
-    return (
-      <AppBar position='static'>
-        <NavBarWeb />
-      </AppBar>
-    );
-  }
+  return <NavBarMobile />;
+  // if (viewPort === md) {
+  //   return (
+  //     <AppBar position='static'>
+  //       <NavBarMobile />
+  //     </AppBar>
+  //   );
+  // } else {
+  //   return (
+  //     <AppBar position='static'>
+  //       <NavBarWeb />
+  //     </AppBar>
+  //   );
+  // }
 };
 
 export default NavCondition;

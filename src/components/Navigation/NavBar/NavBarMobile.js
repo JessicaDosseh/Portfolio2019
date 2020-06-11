@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { observer } from 'mobx-react-lite';
+import RouterStoreContext from '../../../../stores/RouterStore';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
 import Skeleton from '@material-ui/lab/Skeleton';
@@ -11,7 +14,9 @@ import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import { blue } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 
-const NavBarMobile = (props) => {
+const NavBarMobile = observer((props) => {
+  const routerStore = useContext(RouterStoreContext);
+
   const classes = useStyles();
   const { loading = false } = props;
 
@@ -34,7 +39,16 @@ const NavBarMobile = (props) => {
                 loading ? (
                   <Skeleton className={classes.text} width={40} height={40} />
                 ) : (
-                  <MenuIcon style={{ fontSize: 30, paddingTop: 10 }} />
+                  <Button
+                    className={classes.button}
+                    onClick={() => {
+                      routerStore.screen = 'ArchivePage';
+                    }}
+                  >
+                    <color>
+                      <MenuIcon style={{ fontSize: 30, paddingTop: 10 }} />
+                    </color>
+                  </Button>
                 )
               }
             />
@@ -51,9 +65,11 @@ const NavBarMobile = (props) => {
                       switch (viewPort) {
                         case true:
                           return (
-                            <Link
-                              to='/'
-                              className={(classes.root, classes.link)}
+                            <Button
+                              className={classes.button}
+                              onClick={() => {
+                                routerStore.screen = 'LandingPage';
+                              }}
                             >
                               <color className={classes.root}>
                                 <Typography
@@ -63,13 +79,15 @@ const NavBarMobile = (props) => {
                                   Jessica Dosseh
                                 </Typography>
                               </color>
-                            </Link>
+                            </Button>
                           );
                         default:
                           return (
-                            <Link
-                              to='/'
-                              className={(classes.root, classes.link)}
+                            <Button
+                              className={classes.button}
+                              onClick={() => {
+                                routerStore.screen = 'LandingPage';
+                              }}
                             >
                               <color className={classes.root}>
                                 <Typography
@@ -79,7 +97,7 @@ const NavBarMobile = (props) => {
                                   Jessica Dosseh
                                 </Typography>
                               </color>
-                            </Link>
+                            </Button>
                           );
                       }
                     }}
@@ -110,7 +128,7 @@ const NavBarMobile = (props) => {
                           return (
                             <Box className={classes.icons}>
                               <Link
-                                to='/'
+                                href='mailto:Hello@JessicaDosseh.com'
                                 className={(classes.root, classes.link)}
                               >
                                 <color className={classes.root}>
@@ -139,7 +157,7 @@ const NavBarMobile = (props) => {
       </Box>
     </Box>
   );
-};
+});
 
 const useStyles = makeStyles(() => ({
   core: {
@@ -165,6 +183,9 @@ const useStyles = makeStyles(() => ({
       background: blue.A700,
       color: '#FFFFFF',
     },
+  },
+  button: {
+    textTransform: 'none',
   },
   link: {
     textDecoration: 'none',

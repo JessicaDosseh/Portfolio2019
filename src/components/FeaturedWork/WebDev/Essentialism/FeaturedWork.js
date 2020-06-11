@@ -43,7 +43,7 @@ const FeaturedWork = (props) => {
                         loading ? (
                           <Skeleton className={classes.title} />
                         ) : (
-                          <Link href='https://essentialism-fe.netlify.app/'>
+                          <Link href='https://github.com/Essentialism-1-bw'>
                             <img
                               src={FeaturedWorkIMG}
                               alt='Project'
