@@ -9,8 +9,8 @@ const FooterCondition = () => {
   const sm = useMediaQuery('(min-width: 980px)');
 
   if (viewPort === sm) {
-    // return <FooterMobile />;
-    return null;
+    return <FooterMobile />;
+    // return null;
   } else {
     return <FooterWeb />;
   }

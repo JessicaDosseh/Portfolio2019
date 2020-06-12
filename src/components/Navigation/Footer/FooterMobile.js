@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Box from '@material-ui/core/Box';
+import Typography from '@material-ui/core/Typography';
 import Skeleton from '@material-ui/lab/Skeleton';
 import CardHeader from '@material-ui/core/CardHeader';
 import IconButton from '@material-ui/core/IconButton';
@@ -35,7 +36,10 @@ const FooterMobile = (props) => {
   return (
     <Box className={classes.root} boxShadow={4}>
       <dark className={classes.root}>
-        <Box className={classes.leftContainer}>
+        <Typography variant='caption'>
+          Copyright © Jessica Dosseh 2020.
+        </Typography>
+        {/* <Box className={classes.leftContainer}>
           <CardHeader
             action={
               loading ? (
@@ -89,7 +93,7 @@ const FooterMobile = (props) => {
               }
             />
           </Box>
-        </Box>
+        </Box> */}
       </dark>
     </Box>
   );
@@ -101,9 +105,8 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'center',
-    position: 'sticky',
-    bottom: 0,
-    left: 0,
+    paddingTop: 5,
+    paddingBottom: 5,
     '& dark': {
       background: '#141414',
       color: '#FFFFFF',

@@ -167,7 +167,7 @@ const About = (props) => {
                           </IconButton>
                         </BootstrapTooltip>
                         <BootstrapTooltip title='Contact Me' arrow>
-                          <IconButton href='#Contact_Form'>
+                          <IconButton href='mailto:Hello@JessicaDosseh.com'>
                             <EmailIcon style={{ color: blue.A700 }} />
                           </IconButton>
                         </BootstrapTooltip>

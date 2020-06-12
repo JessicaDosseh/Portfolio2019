@@ -5,7 +5,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Divider from '@material-ui/core/Divider';
-// import IMG from '../../images/Projects/IMG.png';
+import Link from '@material-ui/core/Link';
 import Omega2020 from '../../images/Projects/Omega2020.png';
 import Use_My_Tech_Stuff from '../../images/Projects/Use-My-Tech-Stuff.png';
 import Essentialism from '../../images/Projects/Essentialism.png';
@@ -28,7 +28,13 @@ const Projects = () => {
         <ListItemAvatar>
           <img src={Omega2020} width='30px' />
         </ListItemAvatar>
-        <ListItemText primary='Omega2020' secondary='Jan 9, 2014' />
+        <Link
+          href='https://github.com/Lambda-School-Labs/omega2020-fe'
+          className={(classes.root, classes.link)}
+          style={{ color: '#000', textDecoration: 'none' }}
+        >
+          <ListItemText primary='Omega2020' secondary='MM DD, YYYY' />
+        </Link>
       </ListItem>
       <Divider variant='inset' component='li' />
 
@@ -38,7 +44,13 @@ const Projects = () => {
         <ListItemAvatar>
           <img src={Use_My_Tech_Stuff} width='30px' />
         </ListItemAvatar>
-        <ListItemText primary='Use My Tech Stuff ' secondary='Jan 7, 2014' />
+        <Link
+          href='https://github.com/use-my-tech-stuff-3-4'
+          className={(classes.root, classes.link)}
+          style={{ color: '#000', textDecoration: 'none' }}
+        >
+          <ListItemText primary='Use My Tech Stuff ' secondary='MM DD, YYYY' />
+        </Link>
       </ListItem>
       <Divider variant='inset' component='li' />
 
@@ -48,7 +60,13 @@ const Projects = () => {
         <ListItemAvatar>
           <img src={Essentialism} width='30px' />
         </ListItemAvatar>
-        <ListItemText primary='Essentialism' secondary='July 20, 2014' />
+        <Link
+          href='https://github.com/Essentialism-1-bw'
+          className={(classes.root, classes.link)}
+          style={{ color: '#000', textDecoration: 'none' }}
+        >
+          <ListItemText primary='Essentialism' secondary='MM DD, YYYY' />
+        </Link>
       </ListItem>
       <Divider variant='inset' component='li' />
 
@@ -58,7 +76,13 @@ const Projects = () => {
         <ListItemAvatar>
           <img src={Life_Note} width='30px' />
         </ListItemAvatar>
-        <ListItemText primary='Life Note' secondary='July 20, 2014' />
+        <Link
+          href='https://github.com/Design-YourLife'
+          className={(classes.root, classes.link)}
+          style={{ color: '#000', textDecoration: 'none' }}
+        >
+          <ListItemText primary='Life Note' secondary='MM DD, YYYY' />
+        </Link>
       </ListItem>
     </List>
   );

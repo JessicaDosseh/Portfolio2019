@@ -10,11 +10,15 @@ import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
 import JSIcon from '../../../images/TechStackIcons/javascript.png';
 import ReactIcon from '../../../images/TechStackIcons/react.png';
-import CSSIcon from '../../../images/TechStackIcons/css3.png';
 import MaterialUIIcon from '../../../images/TechStackIcons/material-ui.png';
-import YarnIcon from '../../../images//TechStackIcons/yarn.png';
-import Stack from '../../../images/TechStackIcons/stack.png';
-import axios from '../../../images/TechStackIcons/axios.jpg';
+import YarnIcon from '../../../images/TechStackIcons/yarn.png';
+import CSSIcon from '../../../images/TechStackIcons/css3.png';
+import StackIcon from '../../../images/TechStackIcons/stack.png';
+import HTML5Icon from '../../../images/TechStackIcons/html5.png';
+import NodejsIcon from '../../../images/TechStackIcons/nodejs.svg';
+import axiosIcon from '../../../images/TechStackIcons/axios.jpg';
+import SQLIcon from '../../../images/TechStackIcons/sqlIcon.png';
+
 const columns = [
   { id: 'icon', label: '</>', minWidth: 5 },
   { id: 'stack', label: 'Stack', minWidth: 10 },
@@ -29,9 +33,14 @@ const rows = [
   createData(<img src={JSIcon} width='30' />, 'JavaScript'),
   createData(<img src={MaterialUIIcon} width='30' />, 'Material-UI'),
   createData(<img src={CSSIcon} width='30' />, 'CSS'),
+  createData(<img src={HTML5Icon} width='30' />, 'HTML'),
+  createData(<img src={axiosIcon} width='30' />, 'axios'),
+  createData(<img src={StackIcon} width='30' />, 'React Router'),
   createData(<img src={YarnIcon} width='30' />, 'Yarn'),
-  createData(<img src={axios} width='30' />, 'axios'),
-  createData(<img src={Stack} width='30' />, 'React Router'),
+  createData(<img src={NodejsIcon} width='30' />, 'Node.js'),
+  createData(<img src={StackIcon} width='30' />, 'Express.js'),
+  createData(<img src={StackIcon} width='30' />, 'Knex.js'),
+  createData(<img src={SQLIcon} width='30' />, 'SQL'),
 ];
 
 const useStyles = makeStyles({
@@ -46,7 +55,7 @@ const useStyles = makeStyles({
 export default function TechStack() {
   const classes = useStyles();
   const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [rowsPerPage, setRowsPerPage] = React.useState(20);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);

@@ -6,13 +6,20 @@ import Typography from '@material-ui/core/Typography';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import PropTypes from 'prop-types';
-import CodeIcon from '@material-ui/icons/Code';
 import BuildIcon from '@material-ui/icons/Build';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import Tooltip from '@material-ui/core/Tooltip';
 import { blue, grey } from '@material-ui/core/colors';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
-import Stack from '../../images/TechStackIcons/stack.png';
+import StackIcon from '../../images/TechStackIcons/stack.png';
+import HTML5Icon from '../../images/TechStackIcons/html5.png';
+import CSS3Icon from '../../images/TechStackIcons/css3.png';
+import JSIcon from '../../images/TechStackIcons/javascript.png';
+import reactIcon from '../../images/TechStackIcons/react.png';
+import nodejsIcon from '../../images/TechStackIcons/nodejs.svg';
+import styledCompIcon from '../../images/TechStackIcons/Styled_Components.png';
+import sqlIcon from '../../images/TechStackIcons/sqlIcon.png';
+import jestIcon from '../../images/TechStackIcons/jest.png';
 
 const useStylesBootstrap = makeStyles((theme) => ({
   arrow: {
@@ -91,7 +98,7 @@ const Skills = (props) => {
                       label={
                         <BootstrapTooltip title='Languages / Frameworks'>
                           {/* <CodeIcon /> */}
-                          <img src={Stack} width='30' />
+                          <img src={StackIcon} width='30' />
                         </BootstrapTooltip>
                       }
                       {...a11yProps(0)}
@@ -127,27 +134,40 @@ const Skills = (props) => {
                         Frameworks
                       </Typography>
                       <br />
-                      <Typography variant='caption'>HTML</Typography>
-                      <br />
-                      <Typography variant='caption'>CSS</Typography>
-                      <br />
-                      <Typography variant='caption'>JavaScript</Typography>
-                      <br />
-                      <Typography variant='caption'>React.js</Typography>
-                      <br />
-                      <Typography variant='caption'>
-                        Styled-Components
-                      </Typography>
-                      <br />
-                      <Typography variant='caption'>Node.js</Typography>
-                      <br />
-                      <Typography variant='caption'>Express.js</Typography>
-                      <br />
-                      <Typography variant='caption'>Knex.js</Typography>
-                      <br />
-                      <Typography variant='caption'>Jest</Typography>
-                      <br />
-                      <Typography variant='caption'>SQL</Typography>
+                      <Box className={classes.item}>
+                        <img src={HTML5Icon} width='30' />
+                        <Typography variant='caption'>HTML</Typography>
+                      </Box>
+                      <Box className={classes.item}>
+                        <img src={CSS3Icon} width='30' />
+                        <Typography variant='caption'>CSS</Typography>
+                      </Box>
+                      <Box className={classes.item}>
+                        <img src={JSIcon} width='30' />
+                        <Typography variant='caption'>JavaScript</Typography>
+                      </Box>
+                      <Box className={classes.item}>
+                        <img src={reactIcon} width='30' />
+                        <Typography variant='caption'>React</Typography>
+                      </Box>
+                      <Box className={classes.item}>
+                        <img src={nodejsIcon} width='30' />
+                        <Typography variant='caption'>Node.js</Typography>
+                      </Box>
+                      <Box className={classes.item}>
+                        <img src={styledCompIcon} width='30' />
+                        <Typography variant='caption'>
+                          Styled-Components
+                        </Typography>
+                      </Box>
+                      <Box className={classes.item}>
+                        <img src={sqlIcon} width='30' />
+                        <Typography variant='caption'>SQL</Typography>
+                      </Box>
+                      <Box className={classes.item}>
+                        <img src={jestIcon} width='30' />
+                        <Typography variant='caption'>Jest</Typography>
+                      </Box>
                     </Box>
                   </Box>
                 </TabPanel>
@@ -299,6 +319,16 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: 'column wrap',
     alignContent: 'flex-end',
     textAlign: 'right',
+  },
+  item: {
+    display: 'flex',
+    flexFlow: 'row wrap',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    textAlign: 'center',
+    '& > *': {
+      margin: theme.spacing(1),
+    },
   },
 }));
 

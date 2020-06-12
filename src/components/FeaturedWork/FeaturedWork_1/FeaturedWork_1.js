@@ -43,10 +43,7 @@ const FeaturedWork = (props) => {
                         loading ? (
                           <Skeleton className={classes.title} />
                         ) : (
-                          <Link
-                            href='https://omega2020.netlify.app/'
-                            target='_blank'
-                          >
+                          <Link href='https://omega2020.netlify.app/'>
                             <img
                               src={FeaturedWork_1}
                               alt='omega2020'
