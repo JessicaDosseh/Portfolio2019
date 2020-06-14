@@ -54,5 +54,9 @@ In accordance with this, my portfolio is a way to express my passion for art and
 
 ---
 
+## Project Management
+
+Check out the Trello Board for this project to see what tasks have been completed so far and what still needs to be done
+
 ## Author
-> [Jessica Dossseh](https://www.linkedin.com/in/jessicadosseh/) 
+> [Jessica Dossseh](https://github.com/JessicaDosseh) 
