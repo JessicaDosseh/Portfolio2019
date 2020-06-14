@@ -51,3 +51,8 @@ In accordance with this, my portfolio is a way to express my passion for art and
 > Git flow cheat sheet
 
    - [ ] Push your work to your branch: `git add .` | `git commit -m '...'` | `git push origin your-branch-name`
+
+---
+
+## Author
+> [Jessica Dossseh](https://www.linkedin.com/in/jessicadosseh/) 
