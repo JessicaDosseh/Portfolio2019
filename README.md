@@ -1,24 +1,6 @@
-<div align="center">
-   
-<h1 align="canter"><img src="assets/favicon.png" width = "150"/></h1>
-<br>
 
-</div>
 
-<div align="center">
-   
-
-![APM](https://img.shields.io/apm/l/vim-mode?style=for-the-badge)
-![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)
-![npm](https://img.shields.io/npm/v/npm?color=orange&style=for-the-badge)
-![GitHub top language](https://img.shields.io/github/languages/top/JessicaDosseh/Omega-Web-App?color=yellow&style=for-the-badge)
-
-![React](https://img.shields.io/badge/react-v16.12.0-blue.svg?style=for-the-badge)
-![npm peer dependency version (scoped)](https://img.shields.io/npm/dependency-version/eslint-config/dev/eslint?color=blueviolet&style=for-the-badge)
-
-</div>
-
-# My Personal Portfolio Website __________ [![Netlify Status](https://api.netlify.com/api/v1/badges/18ad1b9a-1e4c-4097-8870-ba301dc33884/deploy-status)](https://jessicadosseh.netlify.app/)
+## A Portfolio Website __________ [tbd]
 
 A personal portfolio allows each individual to put a personal touch and emphasis on their journey, personality, and to highlight the pieces of work that are important to them and reflects who they are.
 
