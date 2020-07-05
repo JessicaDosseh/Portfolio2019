@@ -1,6 +1,6 @@
 
 
-## A Portfolio Website __________ [tbd]
+## A Portfolio Website __________ [tbd](#)
 
 A personal portfolio allows each individual to put a personal touch and emphasis on their journey, personality, and to highlight the pieces of work that are important to them and reflects who they are.
 
